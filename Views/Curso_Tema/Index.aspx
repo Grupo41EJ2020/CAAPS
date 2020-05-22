@@ -4,12 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Pia Desarrollo de Software</title>
+    <title>Curso_tema</title>
 </head>
 <body>
-    <h1>
-    PIA 👍
-    </h1>
-    <a href="/Curso_Tema/Index">Ir a Curso_Tema</a>
+    <div>
+    
+    </div>
 </body>
 </html>
