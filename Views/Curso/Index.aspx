@@ -8,9 +8,8 @@
 </head>
 <body>
     <a href="/Home/Index">Inicio</a>
-    <p>Aqui se mostarará la información de los Cursos</p>
-    <a href="/Video/Create">Crear Nuevo Curso</a>
-    
+    <p>Aqui se mostrara la informacion sobre los Cursos</p>
+  
     
 </body>
 </html>

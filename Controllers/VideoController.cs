@@ -6,15 +6,15 @@ using System.Web.Mvc;
 
 namespace MVCLaboratorio.Controllers
 {
-    public class CursoController : Controller
+    public class VideoController : Controller
     {
         //
-        // GET: /Curso/
-        //Pagina principal de Cursos
+        // GET: /Video/
+
         public ActionResult Index()
         {
             return View();
-      
         }
+
     }
 }
