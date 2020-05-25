@@ -17,5 +17,8 @@
     <a href="/Empleado/Index">Ir a Empleado</a>
     <br />
     <a href="/Tema/Index">Ir a Tema</a>
+    <br />
+    <a href="/Curso/Index">Ir a Curso</a>
+
 </body>
 </html>

@@ -10,11 +10,11 @@ namespace MVCLaboratorio.Controllers
     {
         //
         // GET: /Curso/
-
+        //Pagina principal de los cursos
         public ActionResult Index()
         {
             return View();
+      
         }
-
     }
 }
