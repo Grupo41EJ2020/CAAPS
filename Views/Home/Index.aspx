@@ -12,6 +12,8 @@
         <br />
       SEMESTRE ENERO - JUNIO 2020
     </h1>
+    <a href="/Video/Index">Ir a Video</a>
+    <br />
     <a href="/Curso_Tema/Index">Ir a Curso_Tema</a>
     <br />
     <a href="/Empleado/Index">Ir a Empleado</a>
