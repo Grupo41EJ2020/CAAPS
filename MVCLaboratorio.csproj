@@ -96,12 +96,9 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-<<<<<<< HEAD
     <Content Include="Views\Curso_Tema\Curso_Tema.aspx" />
     <Content Include="Views\Curso_Tema\Curso_TemaInsert.aspx" />
-=======
     <Content Include="Views\Curso\Index.aspx" />
->>>>>>> 70f0800790ab478be9296c471051f27d80ec3b0e
     <Content Include="Views\Curso_Tema\Index.aspx" />
     <Content Include="Views\Curso_Tema_Video\Borrado.aspx" />
     <Content Include="Views\Curso_Tema_Video\Delete.aspx" />
