@@ -80,11 +80,13 @@
     <Compile Include="Models\Curso_Tema_Video.cs" />
     <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\ICurso_Tema.cs" />
+    <Compile Include="Models\ICurso_Tema_Video.cs" />
     <Compile Include="Models\IEmpleado.cs" />
     <Compile Include="Models\ITema.cs" />
     <Compile Include="Models\lCurso.cs" />
     <Compile Include="Models\RepositorioCurso.cs" />
     <Compile Include="Models\RepositorioCurso_Tema.cs" />
+    <Compile Include="Models\RepositorioCurso_Tema_Video.cs" />
     <Compile Include="Models\RepositorioEmpleado.cs" />
     <Compile Include="Models\RepositorioTema.cs" />
     <Compile Include="Models\Tema.cs" />
@@ -94,9 +96,16 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+<<<<<<< HEAD
     <Content Include="Views\Curso_Tema\Curso_Tema.aspx" />
     <Content Include="Views\Curso_Tema\Curso_TemaInsert.aspx" />
+=======
+    <Content Include="Views\Curso\Index.aspx" />
+>>>>>>> 70f0800790ab478be9296c471051f27d80ec3b0e
     <Content Include="Views\Curso_Tema\Index.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Borrado.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Delete.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Index.aspx" />
     <Content Include="Views\Empleado\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Tema\Index.aspx" />
