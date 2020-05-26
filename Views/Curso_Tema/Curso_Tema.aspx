@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Index</title>
+    <title>Curso_Tema</title>
 </head>
 <body>
     <table>
@@ -25,9 +25,9 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })%>
+                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> |
+                <%: Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ })%> |
+                <%: Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })%>
             </td>
             <td>
                 <%: item.IdCT %>
@@ -45,7 +45,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Create New", "Curso_TemaInsert") %>
+        <%: Html.ActionLink("Crear Nuevo", "Curso_TemaInsert")%>
     </p>
 
 </body>

@@ -19,5 +19,15 @@ namespace MVCLaboratorio.Controllers
         {
             return View(DarCurso_Tema.obtenerCurso_Temas());
         }
+        public ActionResult Curso_TemaInsert()
+        {
+            return View(DarCurso_Tema.obtenerCurso_Temas());
+        }
+        [HttpPost]
+        public ActionResult Curso_TemaInsert(Curso_Tema datos)
+        {
+            DarCurso_Tema.insertarCurso_Tema(datos);
+            return RedirectToAction("Index");
+        }
     }
 }
