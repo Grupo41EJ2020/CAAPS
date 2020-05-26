@@ -80,11 +80,13 @@
     <Compile Include="Models\Curso_Tema_Video.cs" />
     <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\ICurso_Tema.cs" />
+    <Compile Include="Models\ICurso_Tema_Video.cs" />
     <Compile Include="Models\IEmpleado.cs" />
     <Compile Include="Models\ITema.cs" />
     <Compile Include="Models\lCurso.cs" />
     <Compile Include="Models\RepositorioCurso.cs" />
     <Compile Include="Models\RepositorioCurso_Tema.cs" />
+    <Compile Include="Models\RepositorioCurso_Tema_Video.cs" />
     <Compile Include="Models\RepositorioEmpleado.cs" />
     <Compile Include="Models\RepositorioTema.cs" />
     <Compile Include="Models\Tema.cs" />
@@ -96,6 +98,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Views\Curso\Index.aspx" />
     <Content Include="Views\Curso_Tema\Index.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Borrado.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Delete.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Index.aspx" />
     <Content Include="Views\Empleado\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Tema\Index.aspx" />
