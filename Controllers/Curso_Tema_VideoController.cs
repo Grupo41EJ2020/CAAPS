@@ -12,6 +12,23 @@ namespace MVCLaboratorio.Controllers
 {
     public class Curso_Tema_VideoController : Controller
     {
-     
+        RepositorioCurso_Tema_Video repoCurso_Tema_Video = new RepositorioCurso_Tema_Video();
+        // GET: /Curso_Tema_Video/
+
+
+//()()()()()()()()()()()(()()()()()()()()LISTA()()()()()()(()()()()()()()()()()()()()()()()()()()()()(()()()()()()()()()()
+
+        public ActionResult Index()
+        {
+            return View(repoCurso_Tema_Video.obtenerCurso_Tema_Videos());
+        }
+
+//()()()()()()()()()()()(()()()()()()()()DETALLE()()()()()()(()()()()()()()()()()()()()()()()()()()()()(()()()()()()()()()()
+
+        public ActionResult Details(int id)
+        {
+            return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video(id));
+        }
+
     }
 }
