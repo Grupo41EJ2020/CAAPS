@@ -5,9 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Borrado</title>
+    <style type="text/css">
+        .style1
+        {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="font-style: italic; text-align: center"> ¡Se ha borrado de: Curso_Tema_Video! </h1>
+    <h1 style="font-style: italic; text-align: center"> ¡Se ha <span class="style1">borrado</span> de: Curso_Tema_Video! </h1>
     <br />  
     <br />
     <br />

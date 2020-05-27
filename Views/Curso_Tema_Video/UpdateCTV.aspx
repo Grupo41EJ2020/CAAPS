@@ -4,14 +4,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Create CTV</title>
+    <title>UpdateCTV</title>
 </head>
 <body>
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
-
+        
         <fieldset>
-            <legend>Informacion CTV</legend
+            <legend>Informacion CTV</legend>
+            
             <div class="editor-label">
                 <%: Html.LabelFor(model => model.IdCT) %>
             </div>
@@ -29,7 +30,7 @@
             </div>
             
             <p>
-                <input type="submit" value="Crear" />
+                <input type="submit" value="Guardar" />
             </p>
         </fieldset>
 

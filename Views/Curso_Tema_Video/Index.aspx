@@ -19,7 +19,7 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Modificar", "Edit", new { id=item.IdCTV}) %> |
+                <%: Html.ActionLink("Modificar", "UpdateCTV", new { id=item.IdCTV}) %> |
                 <%: Html.ActionLink("Detalles", "Details", new { id=item.IdCTV })%> |
                 <%: Html.ActionLink("Borrar", "DeleteCTV", new { id=item.IdCTV })%>
             </td>

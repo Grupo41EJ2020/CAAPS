@@ -65,5 +65,25 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+
+//()()()()()()()()()()()(()()()()()()()()UPDATE()()()()()()(()()()()()()()()()()()()()()()()()()()()()(()()()()()()()()()()
+        public ActionResult UpdateCTV(int id)
+        {
+            return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video(id));
+        }
+
+        [HttpPost]
+        public ActionResult UpdateCTV(int id, Curso_Tema_Video datosCurso_Tema_Video)
+        {
+            datosCurso_Tema_Video.IdCTV = id;
+            repoCurso_Tema_Video.actualizarCurso_Tema_Video(datosCurso_Tema_Video);
+            return RedirectToAction("Modificado");
+        }
+        //Mensaje Modificado
+        public ActionResult Modificado()
+        {
+            return View();
+        }
+
     }
 }

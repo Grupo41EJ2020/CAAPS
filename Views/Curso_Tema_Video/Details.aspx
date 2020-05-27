@@ -21,7 +21,7 @@
         
     </fieldset>
     <p>
-        <%: Html.ActionLink("Modificar", "Edit", new { id=Model.IdCTV }) %> |
+        <%: Html.ActionLink("Modificar", "UpdateCTV", new { id=Model.IdCTV }) %> |
         <%: Html.ActionLink("↺ Volver", "Index")%>
     </p>
 
