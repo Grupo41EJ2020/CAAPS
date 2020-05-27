@@ -106,12 +106,16 @@
     <Content Include="Views\Curso_Tema\Curso_TemaInsert.aspx" />
     <Content Include="Views\Curso_Tema\Index.aspx" />
     <Content Include="Views\Curso_Tema_Video\Borrado.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Creado.aspx" />
+    <Content Include="Views\Curso_Tema_Video\CreateCTV.aspx" />
     <Content Include="Views\Curso_Tema_Video\DeleteCTV.aspx" />
     <Content Include="Views\Curso_Tema_Video\Details.aspx" />
     <Content Include="Views\Curso_Tema_Video\Index.aspx" />
     <Content Include="Views\Empleado\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Tema\Index.aspx" />
+    <Content Include="Views\Video\Create.aspx" />
+    <Content Include="Views\Video\Delete.aspx" />
     <Content Include="Views\Video\Index.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

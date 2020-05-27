@@ -4,13 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Borrado</title>
+    <title>Creado</title>
 </head>
 <body>
-    <h1 style="font-style: italic; text-align: center"> ¡Se ha borrado de: Curso_Tema_Video! </h1>
+    <h1 style="font-style: italic; text-align: center"> ¡Se ha agregado a: Curso_Tema_Video!
+    </h1>
     <br />  
-    <br />
-    <br />
-    <%: Html.ActionLink("⇦ Volver ⇦", "Index")%>
+    <br />  
+    <br />  
+     <%: Html.ActionLink("⇦ Volver ⇦", "Index")%>
 </body>
 </html>

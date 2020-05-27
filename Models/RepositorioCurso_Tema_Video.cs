@@ -60,7 +60,7 @@ namespace MVCLaboratorio.Models
             parametros.Add(new SqlParameter("@IdCT", datosCurso_Tema_Video.IdCT));
             parametros.Add(new SqlParameter("IdVideo", datosCurso_Tema_Video.IdVideo));
 
-            BaseHelper.ejecutarConsulta("sp_Curso_Tema_Video_Agregar", CommandType.StoredProcedure, parametros);
+            BaseHelper.ejecutarConsulta("sp_Curso_Tema_Video_Insertar", CommandType.StoredProcedure, parametros);
 
         }
 //()()()()()()()()()()()(()()()()()()()()ELIMINAR()()()()()()(()()()()()()()()()()()()()()()()()()()()()(()()()()()()()()()()
@@ -81,7 +81,7 @@ namespace MVCLaboratorio.Models
             parametros.Add(new SqlParameter("@IdCT", datosCurso_Tema_Video.IdCT));
             parametros.Add(new SqlParameter("@IdVideo", datosCurso_Tema_Video.IdVideo));
 
-            BaseHelper.ejecutarConsulta("sp_Curso_Tema_Video_Modificar", CommandType.StoredProcedure, parametros);
+            BaseHelper.ejecutarConsulta("sp_Curso_Tema_Video_Actualizar", CommandType.StoredProcedure, parametros);
         }
     }
 } 

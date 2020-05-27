@@ -48,5 +48,22 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+
+//()()()()()()()()()()()(()()()()()()()()CREATE()()()()()()(()()()()()()()()()()()()()()()()()()()()()(()()()()()()()()()()
+        public ActionResult CreateCTV()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult CreateCTV(Curso_Tema_Video datosCurso_Tema_VideodatosCurso_Tema_Video)
+        {
+            repoCurso_Tema_Video.insertarCurso_Tema_Video(datosCurso_Tema_VideodatosCurso_Tema_Video);
+            return RedirectToAction("Creado");
+        }
+
+        public ActionResult Creado()
+        {
+            return View();
+        }
     }
 }

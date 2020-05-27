@@ -33,7 +33,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Crear CTV", "Create") %>
+        <%: Html.ActionLink("Crear CTV", "CreateCTV") %>
     </p>
     <a href="/Home">Menú Principal</a>
 </body>
