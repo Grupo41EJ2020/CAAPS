@@ -39,11 +39,13 @@ namespace MVCLaboratorio.Controllers
         {
             return View(repoVideo.obtenerVideo(id));
         }
+
         [HttpPost]
         public ActionResult Delete(int id, FormCollection datos)
         {
             repoVideo.eliminarVideo(id);
-            return View("Index");
+
+            return RedirectToAction("Index");
         }
 
 //      EDITAR
