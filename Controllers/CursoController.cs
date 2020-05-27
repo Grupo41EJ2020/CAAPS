@@ -26,12 +26,27 @@ namespace MVCLaboratorio.Controllers
       
         }
 
-
         //Detalles cursos
         public ActionResult CursoDetails(int id)
         {
             return View(ObtenerCursos.obtenerCurso(id));
 
         }
+
+
+        //Eliminar cursos(MOSTRAR)
+        public ActionResult CursoDelete(int id)
+        {
+            return View(ObtenerCursos.obtenerCurso(id));
+        }
+
+        //(BOTON ELIMINAR)
+
+        [HttpPost]
+        public ActionResult CursoDelete(int id, FormCollection frm)
+          {
+            ObtenerCursos.obtenerCurso(id);
+            return RedirectToAction("Index");
+          }
     }
 }
