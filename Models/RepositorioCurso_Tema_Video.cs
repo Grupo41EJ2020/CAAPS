@@ -60,10 +60,10 @@ namespace MVCLaboratorio.Models
 
             BaseHelper.ejecutarConsulta("sp_Curso_Tema_Video_Insertar", CommandType.StoredProcedure, parametros);
         }
-        public void eliminarCurso_Tema_Video(int IdCtv)
+        public void eliminarCurso_Tema_Video(int Id)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdCTV", IdCtv));
+            parametros.Add(new SqlParameter("@IdCTV", Id));
 
             BaseHelper.ejecutarConsulta("sp_Curso_Tema_Video_Eliminar", CommandType.StoredProcedure, parametros);
         }

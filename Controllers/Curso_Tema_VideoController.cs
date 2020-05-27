@@ -27,7 +27,7 @@ namespace MVCLaboratorio.Controllers
         }
 
         [HttpPost]
-        public ActionResult Delete(int IdCTV, FormCollection datosCTV)
+        public ActionResult Delete(int IdCTV, FormCollection datosCurso_Tema_Video)
         {
             DarCurso_Tema_Video.eliminarCurso_Tema_Video(IdCTV);
             return View("Borrado");
