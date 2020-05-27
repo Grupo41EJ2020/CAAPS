@@ -22,7 +22,7 @@ namespace MVCLaboratorio.Controllers
         //Insert//
         public ActionResult Curso_TemaInsert()
         {
-            return View(DarCurso_Tema.obtenerCurso_Temas());
+            return View();
         }
         [HttpPost]
         public ActionResult Curso_TemaInsert(Curso_Tema datosCurso_Tema)

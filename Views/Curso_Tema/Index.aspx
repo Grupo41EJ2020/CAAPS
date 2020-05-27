@@ -35,7 +35,7 @@
     <p>
         <%: Html.ActionLink("Create New", "Curso_TemaInsert") %>
     </p>
-
+    <a href="/Home">Menú Principal</a>
 </body>
 </html>
 
