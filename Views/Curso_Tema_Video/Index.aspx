@@ -12,27 +12,18 @@
         <tr>
             <th></th>
             <th>
-              &nbsp; IdCTV
+             IdCTV
             </th>
 
     <% foreach (var item in Model) { %>
-    
         <tr>
             <td>
-<<<<<<< HEAD
                 <%: Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) %> |
                 <%: Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })%> |
                 <%: Html.ActionLink("Delete", "Delete", new {/* id=item.PrimaryKey */})%>
-=======
-                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> &nbsp;|&nbsp;&nbsp;&nbsp;
-                <%: Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ })%> |&nbsp;&nbsp;&nbsp;
-                <%: Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })%>
->>>>>>> 9e525403cbbab85efdcf0bb2598bd0f14f359e85
-            </td>
-            <td> &nbsp;&nbsp;|&nbsp; &nbsp; 
+            <td> 
                 <%: item.IdCTV %>
-           
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;</td>
+           </td>
         </tr>
     
     <% } %>
