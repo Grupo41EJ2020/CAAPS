@@ -13,12 +13,6 @@
             <th>
                 IdCT
             </th>
-            <th>
-                IdCurso
-            </th>
-            <th>
-                IdTema
-            </th>
         </tr>
 
     <% foreach (var item in Model) { %>
@@ -26,17 +20,11 @@
         <tr>
             <td>
                 <%: Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })%> |
+                <%: Html.ActionLink("Details", "Curso_TemaDetails", new { id=item.IdCT })%> |
                 <%: Html.ActionLink("Delete", "Curso_TemaDelete", new { id = item.IdCT })%>
             </td>
             <td>
                 <%: item.IdCT %>
-            </td>
-            <td>
-                <%: item.IdCurso %>
-            </td>
-            <td>
-                <%: item.IdTema %>
             </td>
         </tr>
     

@@ -41,5 +41,10 @@ namespace MVCLaboratorio.Controllers
             DarCurso_Tema.eliminarCurso_Tema(id);
             return RedirectToAction("Index");
         }
+        //Detalles//
+        public ActionResult Curso_TemaDetails(int id)
+        {
+            return View(DarCurso_Tema.obtenerCurso_Tema(id));
+        }
     }
 }
