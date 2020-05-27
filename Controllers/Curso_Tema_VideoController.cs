@@ -12,40 +12,6 @@ namespace MVCLaboratorio.Controllers
 {
     public class Curso_Tema_VideoController : Controller
     {
-        //
-        // GET: /Curso_Tema_Video/
-        RepositorioCurso_Tema_Video DarCurso_Tema_Video = new RepositorioCurso_Tema_Video();
-        //Ve la lista de CTV
-        public ActionResult Index()
-        {
-            return View(DarCurso_Tema_Video.obtenerCurso_Tema_Video());
-        }
-//-----------------------------------------------------------------------------------------------------
-        public ActionResult Delete(int IdCTV)
-        {
-            return View(DarCurso_Tema_Video.obtenerCurso_Tema_Video());
-        }
-
-        [HttpPost]
-        public ActionResult Delete(int IdCTV, FormCollection datosCurso_Tema_Video)
-        {
-            DarCurso_Tema_Video.eliminarCurso_Tema_Video(IdCTV);
-            return View("Borrado");
-        }
-
-        public ActionResult Borrado()
-        {
-            return View();
-        }
-//-----------------------------------------------------------------------------------------------------
-        public ActionResult Select()
-        {
-            return View();
-        }
-
-        public ActionResult Update()
-        {
-            return View();
-        }
+     
     }
 }
