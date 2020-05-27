@@ -12,21 +12,20 @@
         <tr>
             <th></th>
             <th>
-              &nbsp; IdCTV
+             IdCTV
             </th>
 
     <% foreach (var item in Model) { %>
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> &nbsp;|&nbsp;&nbsp;&nbsp;
-                <%: Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ })%> |&nbsp;&nbsp;&nbsp;
+                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %>
+                <%: Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ })%> 
                 <%: Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })%>
             </td>
-            <td> &nbsp;&nbsp;|&nbsp; &nbsp; 
+            <td> 
                 <%: item.IdCTV %>
-           
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;</td>
+           </td>
         </tr>
     
     <% } %>
