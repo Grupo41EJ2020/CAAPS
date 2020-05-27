@@ -46,5 +46,17 @@ namespace MVCLaboratorio.Controllers
         {
             return View(DarCurso_Tema.obtenerCurso_Tema(id));
         }
+        //Edit//
+        public ActionResult Curso_TemaEdit(int id)
+        {
+            return View(DarCurso_Tema.obtenerCurso_Tema(id));
+        }
+        [HttpPost]
+        public ActionResult Curso_TemaEdit(int id, Curso_Tema datosCurso_Tema)
+        {
+            datosCurso_Tema.IdCT = id;
+            DarCurso_Tema.actualizarCurso_Tema(datosCurso_Tema);
+            return RedirectToAction("Index");
+        }
     }
 }
