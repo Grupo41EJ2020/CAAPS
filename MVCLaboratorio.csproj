@@ -105,6 +105,8 @@
     <Content Include="Views\Curso_Tema\Curso_TemaDelete.aspx" />
     <Content Include="Views\Curso_Tema\Curso_TemaInsert.aspx" />
     <Content Include="Views\Curso_Tema\Index.aspx" />
+    <Content Include="Views\Curso_Tema_Video\Borrado.aspx" />
+    <Content Include="Views\Curso_Tema_Video\DeleteCTV.aspx" />
     <Content Include="Views\Curso_Tema_Video\Details.aspx" />
     <Content Include="Views\Curso_Tema_Video\Index.aspx" />
     <Content Include="Views\Empleado\Index.aspx" />

@@ -69,7 +69,7 @@ namespace MVCLaboratorio.Models
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdCTV", IdCTV));
-            BaseHelper.ejecutarSentencia("sp_Curso_Tema_Video_Borrar", CommandType.StoredProcedure, parametros);
+            BaseHelper.ejecutarSentencia("sp_Curso_Tema_Video_Eliminar", CommandType.StoredProcedure, parametros);
 
         }
 //()()()()()()()()()()()(()()()()()()()()ACTUALIZAR()()()()()()(()()()()()()()()()()()()()()()()()()()()()(()()()()()()()()()()

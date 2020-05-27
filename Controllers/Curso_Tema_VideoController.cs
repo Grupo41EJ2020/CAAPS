@@ -30,5 +30,23 @@ namespace MVCLaboratorio.Controllers
             return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video(id));
         }
 
+//()()()()()()()()()()()(()()()()()()()()DELETE()()()()()()(()()()()()()()()()()()()()()()()()()()()()(()()()()()()()()()()
+      
+        public ActionResult DeleteCTV(int id)
+        {
+            return View(repoCurso_Tema_Video.obtenerCurso_Tema_Video(id));
+        }
+        [HttpPost]
+        public ActionResult DeleteCTV(int id, FormCollection datos)
+        {
+            repoCurso_Tema_Video.eliminarCurso_Tema_Video(id);
+
+            return RedirectToAction("Borrado");
+        }
+        //Mensaje Borrar
+        public ActionResult Borrado()
+        {
+            return View();
+        }
     }
 }

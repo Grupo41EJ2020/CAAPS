@@ -4,11 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Detalles</title>
+    <title>Borrar CTV</title>
 </head>
 <body>
+    <h3>¿Seguro quieres borrar de CTV?</h3>
     <fieldset>
-        <legend>Información CTV</legend>
+        <legend>Informacion CTV</legend>
         
         <div class="display-label">IdCTV</div>
         <div class="display-field"><%: Model.IdCTV %></div>
@@ -20,10 +21,12 @@
         <div class="display-field"><%: Model.IdVideo %></div>
         
     </fieldset>
-    <p>
-        <%: Html.ActionLink("Modificar", "Edit", new { id=Model.IdCTV }) %> |
-        <%: Html.ActionLink("↺ Volver", "Index")%>
-    </p>
+    <% using (Html.BeginForm()) { %>
+        <p>
+		    <input type="submit" value="Borrar" /> |
+		    <%: Html.ActionLink("⇦ Volver ⇦", "Index")%>
+        </p>
+    <% } %>
 
 </body>
 </html>
