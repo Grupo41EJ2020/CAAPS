@@ -25,5 +25,13 @@ namespace MVCLaboratorio.Controllers
             return View(ObtenerCursos.obtenerCursos());
       
         }
+
+
+        //Detalles cursos
+        public ActionResult CursoDetails(int id)
+        {
+            return View(ObtenerCursos.obtenerCurso(id));
+
+        }
     }
 }
