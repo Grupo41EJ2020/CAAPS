@@ -48,5 +48,21 @@ namespace MVCLaboratorio.Controllers
             ObtenerCursos.obtenerCurso(id);
             return RedirectToAction("Index");
           }
+
+        //Editar cursos(MOSTRAR)
+        public ActionResult CursoEdit(int id)
+          {
+              return View(ObtenerCursos.obtenerCurso(id));
+
+          }
+
+        //(BOTON EDITAR)
+        [HttpPost]
+        public ActionResult CursoEdit(int id, Curso datosCurso)
+          {
+            datosCurso.IdCurso = id;
+            ObtenerCursos.actualizarCurso(datosCurso);
+            return RedirectToAction("Index");
+          }
     }
 }

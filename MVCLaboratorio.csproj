@@ -102,6 +102,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Views\Curso\CursoDelete.aspx" />
     <Content Include="Views\Curso\CursoDetails.aspx" />
+    <Content Include="Views\Curso\CursoEdit.aspx" />
     <Content Include="Views\Curso\Index.aspx" />
     <Content Include="Views\Curso_Tema\Curso_Tema.aspx" />
     <Content Include="Views\Curso_Tema\Curso_TemaDelete.aspx" />
