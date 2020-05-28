@@ -45,7 +45,7 @@ namespace MVCLaboratorio.Controllers
         [HttpPost]
         public ActionResult CursoDelete(int id, FormCollection frm)
           {
-            ObtenerCursos.obtenerCurso(id);
+            ObtenerCursos.eliminarCurso(id);
             return RedirectToAction("Index");
           }
 
@@ -64,5 +64,21 @@ namespace MVCLaboratorio.Controllers
             ObtenerCursos.actualizarCurso(datosCurso);
             return RedirectToAction("Index");
           }
+
+
+        //Crear cursos nuevos
+        public ActionResult CursoCreate()
+          {
+            return View();
+          
+        }
+
+        //(BOTON CREAR)
+        [HttpPost]
+        public ActionResult CursoCreate(Curso datosCurso)
+        {
+            ObtenerCursos.insertarCurso(datosCurso);
+            return RedirectToAction("Index");
+        }
     }
 }
