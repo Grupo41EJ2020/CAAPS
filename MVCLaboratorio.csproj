@@ -125,7 +125,11 @@
     <Content Include="Views\Empleado\Index.aspx" />
     <Content Include="Views\Empleado\InsertarEmpleado.aspx" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Tema\createTema.aspx" />
+    <Content Include="Views\Tema\deleteTema.aspx" />
+    <Content Include="Views\Tema\Details.aspx" />
     <Content Include="Views\Tema\Index.aspx" />
+    <Content Include="Views\Tema\updateTema.aspx" />
     <Content Include="Views\Video\Create.aspx" />
     <Content Include="Views\Video\Delete.aspx" />
     <Content Include="Views\Video\Details.aspx" />
