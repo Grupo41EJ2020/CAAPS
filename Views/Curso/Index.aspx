@@ -14,31 +14,21 @@
             <th>
                 IdCurso
             </th>
-            <th>
-                Descripcion
-            </th>
-            <th>
-                IdEmpleado
-            </th>
+       
         </tr>
 
     <% foreach (var item in Model) { %>
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "Editar", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Ver detalles", "Ver detalles", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Eliminar", "", new { /* id=item.PrimaryKey */ })%>
+                <%: Html.ActionLink("Editar", "CursoEdit", new { id=item.IdCurso }) %> |
+                <%: Html.ActionLink("Ver detalles", "CursoDetails", new { id=item.IdCurso })%> |
+                <%: Html.ActionLink("Eliminar", "CursoDelete", new {  id=item.IdCurso })%>
             </td>
             <td>
                 <%: item.IdCurso %>
             </td>
-            <td>
-                <%: item.Descripcion %>
-            </td>
-            <td>
-                <%: item.IdEmpleado %>
-            </td>
+          
         </tr>
     
     <% } %>
