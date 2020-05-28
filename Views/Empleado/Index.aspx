@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Empleado</title>
+    <title>Lista de Empleados</title>
 </head>
 <body>
     <table>
@@ -16,27 +16,21 @@
             <th>
                 Nombre
             </th>
-            <th>
-                Direccion
-            </th>
         </tr>
 
     <% foreach (var item in Model) { %>
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Ver detalles", "Details", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })%>
+                <%: Html.ActionLink("Modificar", "EditarEmpleado", new { id=item.IdEmpleado }) %> |
+                <%: Html.ActionLink("Detalles", "DetallesEmpleado", new { id=item.IdEmpleado })%> |
+                <%: Html.ActionLink("Borrar", "BorrarEmpleado", new { id=item.IdEmpleado  })%>
             </td>
             <td>
                 <%: item.IdEmpleado %>
             </td>
             <td>
                 <%: item.Nombre %>
-            </td>
-            <td>
-                <%: item.Direccion %>
             </td>
         </tr>
     
@@ -45,9 +39,8 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Agregar un nuevo empleado", "EmpleadoInsert") %>
+        <%: Html.ActionLink("Agregar un nuevo empleado", "InsertarEmpleado") %>
     </p>
-
 </body>
 </html>
 

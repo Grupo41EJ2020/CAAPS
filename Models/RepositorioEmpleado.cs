@@ -54,20 +54,20 @@ namespace MVCLaboratorio.Models
         public void insertarEmpleado(Empleado datosEmpleado)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdEmpleado", datosEmpleado.IdEmpleado));
+            //parametros.Add(new SqlParameter("@IdEmpleado", datosEmpleado.IdEmpleado));
             parametros.Add(new SqlParameter("@Nombre", datosEmpleado.Nombre));
             parametros.Add(new SqlParameter("@Direccion", datosEmpleado.Direccion));
 
             BaseHelper.ejecutarConsulta("sp_Empleado_Insertar", CommandType.StoredProcedure, parametros);
         }
-        public void eliminarEmpleado(int IdEmpleado)
+        public void BorrarEmpleado(int IdEmpleado)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdEmpleado", IdEmpleado));
 
             BaseHelper.ejecutarConsulta("sp_Empleado_Eliminar", CommandType.StoredProcedure, parametros);
         }
-        public void actualizarEmpleado(Empleado datosEmpleado)
+        public void EditarEmpleado(Empleado datosEmpleado)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdEmpleado", datosEmpleado.IdEmpleado));

@@ -1,31 +1,31 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Curso_Tema_Video>" %>
+﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Empleado>" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Create CTV</title>
+    <title>InsertarEmpleado</title>
 </head>
 <body>
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
 
         <fieldset>
-            <legend>Informacion CTV</legend>
+            <legend>Datos</legend>
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.IdCT) %>
+                <%: Html.LabelFor(model => model.Nombre) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.IdCT) %>
-                <%: Html.ValidationMessageFor(model => model.IdCT) %>
+                <%: Html.TextBoxFor(model => model.Nombre) %>
+                <%: Html.ValidationMessageFor(model => model.Nombre) %>
             </div>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.IdVideo) %>
+                <%: Html.LabelFor(model => model.Direccion) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.IdVideo) %>
-                <%: Html.ValidationMessageFor(model => model.IdVideo) %>
+                <%: Html.TextBoxFor(model => model.Direccion) %>
+                <%: Html.ValidationMessageFor(model => model.Direccion) %>
             </div>
             
             <p>
@@ -36,7 +36,7 @@
     <% } %>
 
     <div>
-        <%: Html.ActionLink("Volver", "Index") %>
+        <%: Html.ActionLink("Regresar a la lista", "Index") %>
     </div>
 
 </body>

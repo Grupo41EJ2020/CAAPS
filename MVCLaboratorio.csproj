@@ -114,7 +114,11 @@
     <Content Include="Views\Curso_Tema_Video\Index.aspx" />
     <Content Include="Views\Curso_Tema_Video\Modificado.aspx" />
     <Content Include="Views\Curso_Tema_Video\UpdateCTV.aspx" />
+    <Content Include="Views\Empleado\BorrarEmpleado.aspx" />
+    <Content Include="Views\Empleado\DetallesEmpleado.aspx" />
+    <Content Include="Views\Empleado\EditarEmpleado.aspx" />
     <Content Include="Views\Empleado\Index.aspx" />
+    <Content Include="Views\Empleado\InsertarEmpleado.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Tema\Index.aspx" />
     <Content Include="Views\Video\Create.aspx" />

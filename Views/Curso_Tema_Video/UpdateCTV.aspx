@@ -39,7 +39,6 @@
     <div>
         <%: Html.ActionLink("Volver", "Index") %>
     </div>
-
 </body>
 </html>
 
