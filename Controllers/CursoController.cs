@@ -17,19 +17,19 @@ namespace MVCLaboratorio.Controllers
         //
         // GET: /Curso/
 
-        RepositorioCurso ObtenerCursos = new RepositorioCurso();
+        RepositorioCurso repoCurso = new RepositorioCurso();
 
         //Pagina principal de Cursos
         public ActionResult Index()
         {
-            return View(ObtenerCursos.obtenerCursos());
+            return View(repoCurso.obtenerCursos());
       
         }
 
         //Detalles cursos
         public ActionResult CursoDetails(int id)
         {
-            return View(ObtenerCursos.obtenerCurso(id));
+            return View(repoCurso.obtenerCurso(id));
 
         }
 
@@ -37,7 +37,7 @@ namespace MVCLaboratorio.Controllers
         //Eliminar cursos(MOSTRAR)
         public ActionResult CursoDelete(int id)
         {
-            return View(ObtenerCursos.obtenerCurso(id));
+            return View(repoCurso.obtenerCurso(id));
         }
 
         //(BOTON ELIMINAR)
@@ -45,14 +45,14 @@ namespace MVCLaboratorio.Controllers
         [HttpPost]
         public ActionResult CursoDelete(int id, FormCollection frm)
           {
-            ObtenerCursos.eliminarCurso(id);
+            repoCurso.eliminarCurso(id);
             return RedirectToAction("Index");
           }
 
         //Editar cursos(MOSTRAR)
         public ActionResult CursoEdit(int id)
           {
-              return View(ObtenerCursos.obtenerCurso(id));
+              return View(repoCurso.obtenerCurso(id));
 
           }
 
@@ -61,7 +61,7 @@ namespace MVCLaboratorio.Controllers
         public ActionResult CursoEdit(int id, Curso datosCurso)
           {
             datosCurso.IdCurso = id;
-            ObtenerCursos.actualizarCurso(datosCurso);
+            repoCurso.actualizarCurso(datosCurso);
             return RedirectToAction("Index");
           }
 
@@ -77,7 +77,7 @@ namespace MVCLaboratorio.Controllers
         [HttpPost]
         public ActionResult CursoCreate(Curso datosCurso)
         {
-            ObtenerCursos.insertarCurso(datosCurso);
+            repoCurso.insertarCurso(datosCurso);
             return RedirectToAction("Index");
         }
     }
