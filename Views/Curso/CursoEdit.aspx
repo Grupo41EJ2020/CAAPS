@@ -56,13 +56,6 @@
         <fieldset>
             <legend style="color: #FFFFFF">Datos</legend>
             
-            <div class="editor-label">
-                <%: Html.LabelFor(model => model.IdCurso) %>
-            </div>
-            <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.IdCurso) %>
-                <%: Html.ValidationMessageFor(model => model.IdCurso) %>
-            </div>
             
             <div class="editor-label">
                 <%: Html.LabelFor(model => model.Descripcion) %>
