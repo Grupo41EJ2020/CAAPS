@@ -5,11 +5,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Curso_TemaDelete</title>
+      <style type="text/css">
+        a:link, a:visited{
+    text-decoration: none;
+    padding: 15px 6px;
+    text-transform: uppercase;
+    font-size: xx-small;
+    color: white;
+    width:57px;
+    height:7px;
+    text-align:center;
+    display: inline-block;
+    margin: 20px 20px 0 20px;
+    background-color: #CC0000;
+    }
+    a:hover{
+    color: #4c5557;
+    background-color: #CC0000;
+    text-decoration: none;
+    }    
+          .display-label
+          {
+              color: #FFFFFF;
+          }
+          .display-field
+          {
+              color: #FFFFFF;
+          }
+    </style>
+   
 </head>
+<body style="background-color: #000000">
 <body>
-    <h3>Quieres eliminiar los datos?</h3>
+    <h3 class="display-label">Quieres eliminiar los datos?</h3>
     <fieldset>
-        <legend>Fields</legend>
+        <legend style="font-weight: 700; color: #FFFFFF">Fields</legend>
         
         <div class="display-label">IdCT</div>
         <div class="display-field"><%: Model.IdCT %></div>
