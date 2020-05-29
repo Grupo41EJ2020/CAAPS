@@ -82,7 +82,7 @@
     <% } %>
 
     <div>
-    <a href="/Home/Index"><strong style="font-size: x-small">Regresar a inicio</strong></a></p>
+    <a href="/Empleado/Index"><strong style="font-size: x-small">Regresar a la lista</strong></a></p>
     </div>
 
 </body>
