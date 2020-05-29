@@ -4,15 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Borrar CTV</title>
-        <style type="text/css">
-        .style1
-        {
-            color: #FFFFFF;
-        }
+    <title>DeleteCTV</title>
+      <style type="text/css">
         a:link, a:visited{
     text-decoration: none;
-    padding: 10px 3px;
+    padding: 15px 6px;
     text-transform: uppercase;
     font-size: xx-small;
     color: white;
@@ -34,39 +30,40 @@
             text-align: center;
             background-color: #CC0000;
         }
-            .display-field
-            {
-                color: #FFFFFF;
-            }
+          .display-label
+          {
+              color: #FFFFFF;
+          }
     </style>
    
 </head>
 <body style="background-color: #000000">
-    <h1 class="style3"> <em style="background-color: #CC0000">Borrar CTV</em></h1>
-    <hr style="background-color: #FFFFFF; height: 10px;" />
-</head>
-<body>
-    <h3 class="style1">¿Seguro queres borrar de CTV?</h3>
+    <h1 class="style3"> <em style="background-color: #CC0000">Opciones Curso_Tema_Video 
+        </em> </h1>
+    <hr style="background-color: #FFFFFF; height: 8px;" />
+    <h3 class="display-label">¿Seguro de querer borrar esto?</h3>
     <fieldset>
-        <legend class="style1">I<strong>nformacion CTV</strong></legend>
+        <legend style="color: #FFFFFF; font-weight: 700">Informacion CTV</legend>
         
-        <div class="style1">IdCTV</div>
+        <div class="display-label">IdCTV</div>
         <div class="display-field"><%: Model.IdCTV %></div>
         
-        <div class="style1">IdCT</div>
+        <div class="display-label">IdCT</div>
         <div class="display-field"><%: Model.IdCT %></div>
         
-        <div class="style1">IdVideo</div>
-        <div class="display-field"></div>
+        <div class="display-label">IdVideo</div>
+        <div class="display-field"><%: Model.IdVideo %></div>
         
     </fieldset>
     <% using (Html.BeginForm()) { %>
-        <hr style="height: 8px; background-color: #FFFFFF" />
-    <% } %>
+        <p>
 
-    <p>
-		    <input type="submit" value="Borrar" /></p>
-              <%: Html.ActionLink("↺ Volver", "Index")%>
+  <hr style="background-color: #FFFFFF; height: 6px;" />
+
+		    <input type="submit" value="Eliminar" /> |
+		    <%: Html.ActionLink("Volver", "Index") %>
+        </p>
+    <% } %>
 
 </body>
 </html>
