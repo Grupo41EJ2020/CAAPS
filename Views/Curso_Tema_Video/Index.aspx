@@ -13,7 +13,7 @@
         }
         a:link, a:visited{
     text-decoration: none;
-    padding: 10px 3px;
+    padding: 15px 6px;
     text-transform: uppercase;
     font-size: xx-small;
     color: white;
