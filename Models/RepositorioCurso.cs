@@ -57,7 +57,6 @@ namespace MVCLaboratorio.Models
         public void insertarCurso(Curso datosCurso)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdCurso", datosCurso.IdCurso));
             parametros.Add(new SqlParameter("@Descripcion", datosCurso.Descripcion));
             parametros.Add(new SqlParameter("@IdEmpleado", datosCurso.IdEmpleado));
 
